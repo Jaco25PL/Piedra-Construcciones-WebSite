@@ -377,6 +377,7 @@ a{
     -o-transition: all ease-out .3s;
 }
 
+
 .btn:hover{
     background-color: #fff;
     box-shadow: 0 0 1rem #aaa;
