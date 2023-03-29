@@ -94,12 +94,16 @@ a{
 }
 
 .nav__items{
+    align-items: center;
+    display: flex;
+    position: relative;
     list-style-type: none;
     transition: all ease .3s;
     -webkit-transition: all ease .3s;
     -moz-transition: all ease .3s;
     -ms-transition: all ease .3s;
     -o-transition: all ease .3s;
+    height: 5rem;
 }
 
 .nav__items:hover{
@@ -131,6 +135,49 @@ a{
     background-color: rgba(255, 99, 71, 0.7);
     text-shadow: 0 0 .5rem #aaa;
 }
+
+/* ----------- nav subMenu ----------- */
+.nav__menu-sub{
+    display: none;
+    position: absolute;
+    top: 4.7rem;
+    background-color: #ffffffb0;
+    padding: 1rem;
+    width: 13rem;
+    border-radius: 0 0 .3rem .3rem;
+}
+
+.nav__item-d:hover .nav__menu-sub{
+    display: block;
+}
+
+.nav__link-d{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav__item-sub{
+    list-style-type: none;
+    white-space: nowrap;
+    margin: 1rem 0;
+}
+
+.nav__item-sub:hover .nav__sub-link{
+    background-color: rgba(255, 99, 71, 0.7);
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.nav__sub-link{
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: .5rem;
+    border-radius: .3rem;
+    transition: all ease-out .3s;
+}
+
 
 /* ----------- main nav bar -------------------------------------------------------------- */
 
@@ -1202,6 +1249,16 @@ a{
         justify-content: center;
     }
 
+    .nav__menu-sub{
+        left: -2rem;
+    }
+
+    .nav__item-sub{
+        display: flex;
+        justify-content: center;
+        margin: .5rem;
+    }
+
     .info-letter{
         margin: 2rem 10%;
         padding: 2rem 6%;
@@ -1545,7 +1602,7 @@ a{
     .footer__copyright{
         font-size: .85rem;
     }
-    
+
    .footer__tyc{
     margin: 0;
     font-size: 1rem;
