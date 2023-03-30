@@ -1,0 +1,103 @@
+
+.footer{
+    background-color: $dark;
+    padding-top: $R1;
+
+// footer top ----------------------------
+    
+    .footer__top{
+        @include f-n-center(space-around);
+        margin: $margin-section;
+    }
+
+// footer logo ----------------------------
+
+    &__logo-item{
+        width: 10rem;
+        transition: $soft;
+        -webkit-transition: $soft;
+        -moz-transition: $soft;
+        -ms-transition: $soft;
+        -o-transition: $soft;
+        &:hover{
+            transform: scale(1.03);
+            -webkit-transform: scale(1.03);
+            -moz-transform: scale(1.03);
+            -ms-transform: scale(1.03);
+            -o-transform: scale(1.03);
+        }
+    }
+
+// footer contacts ----------------------------
+
+    &__contact-item{
+        list-style-type: none;
+        padding: $r3 0;
+        @include f-n-center(start);
+
+
+        .icons{
+            color: $light;
+            font-size: $fs-2;
+        }
+}
+    &__contact-link{
+        font-size: $fs-1;
+        color: $light;
+        font-weight: weight(normal);
+        padding-left: $R13;
+        transition: $soft ;
+        -webkit-transition: $soft ;
+        -moz-transition: $soft ;
+        -ms-transition: $soft ;
+        -o-transition: $soft ;
+        &:hover{
+            transform: translateX($r5)        ;
+            -webkit-transform: translateX($r5)        ;
+            -moz-transform: translateX($r5)        ;
+            -ms-transform: translateX($r5)        ;
+            -o-transform: translateX($r5)        ;
+}
+    }
+
+// footer nav ----------------------------
+
+    &__nav-item{
+        list-style-type: none;
+        @include f-center(column);
+        padding: $r3 0;
+    }
+    &__nav-link{    
+        @extend .footer__contact-link;
+    }
+}
+
+// footer bottom ----------------------------
+
+.footer__bottom{
+    border-top: 2px solid $gray-t;
+    height: fit-content;
+    @include f-center(row);
+    gap: $R2;
+    padding: $r5;
+    &-copyright{
+        color: $light-t;
+        font-size: $fs-1;
+        font-weight: weight(normal);
+
+    }
+    &-tyc{
+        @extend .footer__bottom-copyright;
+        transition: $soft;
+        -webkit-transition: $soft;
+        -moz-transition: $soft;
+        -ms-transition: $soft;
+        -o-transition: $soft;
+        &:hover{
+            color: $light;
+        }
+}
+}
+
+
+

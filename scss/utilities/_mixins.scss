@@ -1,0 +1,13 @@
+// mixin for display flex
+@mixin f-center($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin f-n-center($space){
+    display: flex;
+    justify-content: $space;
+    align-items: center;
+}

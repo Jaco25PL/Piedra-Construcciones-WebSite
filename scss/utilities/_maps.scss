@@ -1,0 +1,12 @@
+// font-weights
+$font-weights: (
+    "bolder": 900,
+    "bold": 700,
+    "normal": 400,
+    "light": 200
+);
+
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
+}
+
