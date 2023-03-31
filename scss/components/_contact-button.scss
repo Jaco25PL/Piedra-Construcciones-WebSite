@@ -1,0 +1,26 @@
+
+
+.fixed{
+    @include f-center(column);
+    position: fixed;
+    top: calc(100% - 5rem);
+    left: 93%;
+
+    
+    &__wpp{
+        &-img{
+            width: 4rem;
+            height: auto;
+            @include pulse(3s);
+        }
+    }
+}
+
+// responsive
+
+@media screen and (max-width: 1080px){
+    .fixed__wpp-img{
+        width: 3rem;
+    }
+}
+

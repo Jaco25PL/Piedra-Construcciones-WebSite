@@ -9,7 +9,6 @@
     width: 100%;
     @include f-center(column);
 
-
     &__bg-text{
         @include f-center(column);
         font-family: $second-f;
@@ -22,6 +21,7 @@
         -moz-border-radius: $r3;
         -ms-border-radius: $r3;
         -o-border-radius: $r3;
+        @include down(2s);
     }
     
     &__title{
@@ -161,7 +161,6 @@
         margin: 1rem 0;
         text-align: justify;    
     }
-
 }
 
 // mainPage servicios section
@@ -191,18 +190,20 @@
         }
         &-snd{
             grid-area: sndCard;
+            //height: 25rem;
             overflow: hidden;
-            @include f-center(column);
-            height: 25rem;
+            padding: 0;
+            height: fit-content;
+            width: 100%;
+            display: flex;
+            align-self: center;
         }
         &-img{
-            width: auto;
-            height: 25rem;
-            border-radius: $r3;
-            -webkit-border-radius: $r3;
-            -moz-border-radius: $r3;
-            -ms-border-radius: $r3;
-            -o-border-radius: $r3;
+            width: 100%;
+            height: auto;
+            &-two{
+                display: none;
+            }
         }
     }
     &__p{
@@ -314,9 +315,43 @@
         }
     }
 
-
     &-btn{
         grid-area: btn;
+    }
+}
+
+// responsiev
+
+@media screen and (max-width: 1080px){
+    .laEmpresa, .servicios, .proyectos{
+        padding: $r8;
+        gap: $r8;
+    }
+    .servicios__card-img-two{
+        display: flex;
+    }
+    .servicios__card-snd{
+        background-color: transparent;
+        @include f-center(column);
+        gap: $R1;
+        height: auto;
+        width: 100%;
+        min-width: 280px;
+        overflow: hidden;
+        &:hover{
+            box-shadow: none;
+        }
+    }
+    .servicios__card-img{
+        width: 100%;   
+        height: auto;
+    }
+    .servicios__item{
+        margin: $r5 $r3;
+        white-space: nowrap;
+    }
+    .servicios__link{
+        padding: $r3;
     }
 
 }

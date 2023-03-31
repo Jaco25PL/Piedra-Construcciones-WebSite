@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover our full range of construction services in Uruguay, including masonry, renovations, house building, plumbing, electrical work, painting, and dry construction. Our experienced team of professionals is dedicated to delivering high-quality and reliable solutions for all types of construction projects. Contact us today for a personalized quote and take the first step towards building your dream home or project.">
-    
+    <meta name="description" content="Descubre nuestra amplia gama de servicios de construcción en Uruguay, que incluyen albañilería, renovaciones, construcción de casas, plomería, trabajos eléctricos, pintura y construcción en seco. Nuestro experimentado equipo de profesionales está dedicado a ofrecer soluciones confiables y de alta calidad para todo tipo de proyectos de construcción. Contáctanos hoy mismo para obtener un presupuesto personalizado y dar el primer paso hacia la construcción de tu hogar o proyecto soñado.">
+    <meta name="keywords" content="construcción, construcciones, Uruguay, Montevideo, edificios, casas, arquitectura, obras, inmobiliaria">
+
 <!-- link css -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -17,27 +18,27 @@
     <script src="https://kit.fontawesome.com/0d829890fc.js" crossorigin="anonymous"></script>
  
 <!-- favicon -->
-    <link rel="icon" href="img/favicon-2.png" type="image/png" >
+    <link rel="icon" href="img/favicon-2.webp" type="image/webp" >
 
-    <title>Bienvenidos - Piedra Construcciones</title>
+    <title>Bienvenido - Piedra Construcciones</title>
 
 </head>
 <body>  
 
 <!-- header section -->
-    <header class="header">
+    <header id="top" class="header">
         <div class="header__link">
             <a href="index.html" class="header__link-img">
                 <img src="img/Logo-d.png" alt="Piedra-Construcciones-logo" class="header__img">
             </a>
-            <a href="#" class="header__link-cont">Contacto</a>
+            <a href="pages/contactos.html" class="header__link-cont">Contacto</a>
         </div>
     </header>
     <nav class="nav">
         <ul class="nav__menu">
-            <li class="nav__item"><a href="" class="nav__link nav__link-inicio">Inicio</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Nosotros</a></li>
-            <li class="nav__item nav__item-down"><a href="" class="nav__link">Servicios<i class="nav__link-icon fa-solid fa-caret-down"></i></a>
+            <li class="nav__item"><a href="index.html" class="nav__link nav__link-inicio">Inicio</a></li>
+            <li class="nav__item"><a href="pages/nosotros.html" class="nav__link">Nosotros</a></li>
+            <li class="nav__item nav__item-down"><a href="pages/servicios.html" class="nav__link">Servicios<i class="nav__link-icon fa-solid fa-caret-down"></i></a>
                 <ul class="nav__menu-sub">
                     <li class="nav__item-sub"><a href="#" class="nav__link nav__link-sub">Reformas</a></li>
                     <li class="nav__item-sub"><a href="#" class="nav__link nav__link-sub">Steel Framing</a></li>
@@ -49,9 +50,15 @@
 
                 </ul>
             </li>
-            <li class="nav__item"><a href="" class="nav__link">Proyectos</a></li>
+            <li class="nav__item"><a href="pages/proyectos.html" class="nav__link">Proyectos</a></li>
         </ul>
     </nav>
+    <div class="fixed">
+        <a href="https://www.whatsapp.com" target="_blank" class="fixed__wpp">
+            <img class="fixed__wpp-img" alt="WhatsApp" src="img/wpp-log.webp">
+            <!-- <i class="fixed__wpp-i fa-brands fa-whatsapp"></i> -->
+        </a>
+    </div>
 
 <!-- nameCompany section-->
     <div class="name">
@@ -118,6 +125,7 @@
         </div>       
 
         <div class="servicios__card servicios__card-snd">
+            <img src="img/render-3.jpg" alt="construction-img" class="servicios__card-img servicios__card-img-two">
             <img src="img/render-1.jpg" alt="construction-img" class="servicios__card-img">
         </div>
 
@@ -142,6 +150,7 @@
         </div>
         <div class="proyectos__card proyectos__card-snd">
             <img src="img/c-i-2.jpg" alt="img" class="proyectos__card-img">
+            <img src="img/c-i-4.jpg" alt="img" class="proyectos__card-img proyectos__card-img-two">
         </div>
         <div class="btn proyectos-btn">
             <a href="pages/proyectos.html" class="btn__link">Ver mas</a>
@@ -199,7 +208,7 @@
             </div>
         </div>
         <div class="footer__bottom">
-            <spam class="footer__bottom-copyright">© Piedra construcciones Todos los derechos reservados.</spam>
+            <span class="footer__bottom-copyright">© Piedra construcciones Todos los derechos reservados.</span>
             <span><a href="#" class="footer__bottom-tyc">Terminos y Condiciones</a></span>
         </div>
     </footer>
