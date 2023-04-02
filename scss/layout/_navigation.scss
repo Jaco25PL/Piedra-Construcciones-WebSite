@@ -131,6 +131,7 @@
         -o-transition: $soft;
         &-icon{
             margin-left: $R1;
+            color: $light;
         }
 
         &:hover{
@@ -161,7 +162,7 @@
         justify-content: end;
         padding: 0;
         &__menu{
-            background-color: $dark;
+            background-color: $dark-t;
             position: absolute;
             height: fit-content;
             top: 4rem;
@@ -197,14 +198,24 @@
         &:hover .nav__menu{
             @include f-center(column);
         }
+
+    // sub-menu
         &__item-down{
             flex-direction: column;
             order: 2;
-        }  
+        }
+        &__item-mobile-down{
+            @include f-center(row);
+        }
+
+    // sub-sub-menu  
+        &__link-icon{
+            margin-left: 1rem;
+        }
     }
-    .nav__icon-mobile:hover .nav__menu{
-        @include f-center(column);
-    }
+    
+
+
 }
 
 @media screen and (max-width: 480px){

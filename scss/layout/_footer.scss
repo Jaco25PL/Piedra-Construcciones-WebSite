@@ -112,7 +112,11 @@
 }
 
 @media screen and (max-width: 770px){
+
     .footer{
+        &__icons{
+            display: none !important;
+        }
         padding: $r5;
         .footer__top{
             @include f-center(column-reverse);
@@ -148,9 +152,9 @@
 }
             }
         }
-        &__icons{
-            display: none;
-        }
+        // &__icons{
+        //     display: none;
+        // }
 
     }
 

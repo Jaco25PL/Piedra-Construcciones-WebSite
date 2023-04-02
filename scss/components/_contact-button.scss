@@ -27,9 +27,11 @@
     }
 }
 
-@media screen and (max-width: 770px){
-    .fixed__wpp-img{
-    // left: 90%;
-    }
+@media screen and (max-width: 480px){
+    .fixed{
+        top: calc(100% - 5.5rem); 
+        left: calc(100% - 3.5rem);
+
+        }   
 }
 
