@@ -1,0 +1,73 @@
+.name{
+    background-image: url(../img/casa-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding: 0 12%;
+    height: 22.5rem;
+    width: 100%;
+    @include f-center(column);
+
+    &__bg-text{
+        @include f-center(column);
+        font-family: $second-f;
+        background-color: #0004;
+        backdrop-filter: blur(5px);
+        border-radius: $r3;
+        color: $light;
+        padding: 1rem 15%;
+        -webkit-border-radius: $r3;
+        -moz-border-radius: $r3;
+        -ms-border-radius: $r3;
+        -o-border-radius: $r3;
+        @include down(2s);
+    }
+    
+    &__title{
+        width: fit-content;
+        font-size: $fs-5;
+        font-weight: weight(bold);
+        border-bottom: $b-bottom;
+        line-height: 1;
+    }
+    &__sTitle{
+        font-size: $fs-4;
+        letter-spacing: .2rem;
+        font-weight: weight(light);
+    }
+}
+
+// responsive
+@media screen and (max-width: 770px) {
+    .name{
+        height: 15rem;
+
+        &__bg-text{
+            padding: 1rem 5%;
+        }
+        &__title{
+            font-size: 5rem;
+        }
+        &__sTitle{
+            font-size: 3rem;
+        } 
+    }  
+}
+
+@media screen and (max-width: 770px) {
+    .name__title{
+        font-size: 3.5rem;
+    }
+    .name__sTitle{
+        font-size: 2rem;
+    }   
+}
+
+@media screen and (max-width: 480px) {
+    .name__title{
+        font-size: 3rem;
+    }
+    .name__sTitle{
+        font-size: 1.8rem;
+    } 
+}

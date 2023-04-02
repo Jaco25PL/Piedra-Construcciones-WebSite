@@ -17,6 +17,7 @@ $r8: .8rem;
 $R2: 1.8rem;
 
 // font-size
+$fs-mobile: .8rem; 
 $fs-1: 1.1rem;
 $fs-2: 1.5rem;
 $fs-3: 1.7rem;
@@ -26,6 +27,7 @@ $fs-5: 7rem;
 
 // paddings & margins
 $margin-section: 2rem 8%;
+$space-mobile: $r8 5%;
 
 // transition
 $soft: all ease-out .3s;

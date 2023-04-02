@@ -1,5 +1,7 @@
 
 .footer{
+    position: relative;
+    z-index: 40;
     background-color: $dark;
     padding-top: $R1;
 
@@ -29,18 +31,18 @@
     }
 
 // footer contacts ----------------------------
-
+    &__contact-icons{
+        display: none;
+    }
     &__contact-item{
         list-style-type: none;
         padding: $r3 0;
         @include f-n-center(start);
-
-
-        .icons{
-            color: $light;
-            font-size: $fs-2;
-        }
-}
+    }
+    &__icons{
+        color: $light;
+        font-size: $fs-2;
+    }
     &__contact-link{
         font-size: $fs-1;
         color: $light;
@@ -99,5 +101,59 @@
 }
 }
 
+// responsive ----------------
+@media screen and (max-width:1080px){
+    .footer__logo-item{
+        width: 8rem;
+    }
+    .footer__bottom-copyright{
+        font-size: $fs-mobile;
+    }
+}
 
+@media screen and (max-width: 770px){
+    .footer{
+        padding: $r5;
+        .footer__top{
+            @include f-center(column-reverse);
+            gap: $R1;
+            margin: $r5 ;
+        }
+        &__logo-item{
+            margin: $r5;
+        }
+        &__contact{
+            padding: $r5;
+            border-top: 2px solid $gray-t;
+            border-bottom: 2px solid $gray-t;
+            &-icons{
+                @include f-center(row);
+                gap: $R1;
+                margin: $r8 0;
+                color: $light-t;
+            }
+            
+            &-list{
+                @include f-center(column);
+            }
+            &-link{
+                padding: 0;
+                &:hover{
+                    transform: scale(1.08);
+                    transform: translateX(0) ;
+                    -webkit-transform: scale(1.08);
+                    -moz-transform: scale(1.08);
+                    -ms-transform: scale(1.08);
+                    -o-transform: scale(1.08);
+}
+            }
+        }
+        &__icons{
+            display: none;
+        }
+
+    }
+
+
+}
 

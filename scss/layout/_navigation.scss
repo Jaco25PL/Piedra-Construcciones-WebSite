@@ -2,7 +2,7 @@
 .header__link{
     @include f-n-center(space-between);
     background-color: $light;
-    padding: 1rem 12%;
+    padding: $R1 12%;
 
     .header__img{
         width: 7rem;
@@ -12,8 +12,7 @@
         -moz-transition: $soft;
         -ms-transition: $soft;
         -o-transition: $soft;
-        &:hover
-{
+        &:hover{
             transform: scale(1.03);
             -webkit-transform: scale(1.03);
             -moz-transform: scale(1.03);
@@ -51,6 +50,9 @@
 
 // nav menu
 .nav{
+    &__icon{
+        display: none;
+    }
     background-color: $dark-t;
     backdrop-filter: blur(5px);
     padding: 0 12%;
@@ -58,9 +60,9 @@
     top: 0;
     z-index: 30;
     height: 4rem;
-        @include f-n-center(flex-end);
+    @include f-n-center(flex-end);
     
-        &__menu{
+    &__menu{
         @include f-center(row);
         gap: $R1;
         position: relative;
@@ -68,19 +70,19 @@
         
     // sub menu ----------------------
 
-    &-sub{
-        display: none;
-        position: absolute;
-        top: 4rem;
-        padding-top: $R1;
-        width: 13rem;
-        background-color: $dark-t;
-        border-radius: 0 0 $r5 $r5;
-        -webkit-border-radius: 0 0 $r5 $r5;
-        -moz-border-radius: 0 0 $r5 $r5;
-        -ms-border-radius: 0 0 $r5 $r5;
-        -o-border-radius: 0 0 $r5 $r5;
-        }
+        &-sub{
+            display: none;
+            position: absolute;
+            top: 4rem;
+            padding-top: $R1;
+            width: 13rem;
+            background-color: $dark-t;
+            border-radius: 0 0 $r5 $r5;
+            -webkit-border-radius: 0 0 $r5 $r5;
+            -moz-border-radius: 0 0 $r5 $r5;
+            -ms-border-radius: 0 0 $r5 $r5;
+            -o-border-radius: 0 0 $r5 $r5;
+            }
     }    
 
     &__item-sub{
@@ -147,5 +149,83 @@
     .nav{
         justify-content: center;
 
+    }
+}
+@media screen and (max-width: 770px){
+    .header__link{
+        padding: $R1 $R2;
+    }
+    .nav{
+        z-index: 50;
+        display: flex;
+        justify-content: end;
+        padding: 0;
+        &__menu{
+            background-color: $dark;
+            position: absolute;
+            height: fit-content;
+            top: 4rem;
+            padding: $R2;
+            min-width: 17rem;
+            display: none;
+            border-radius: 0 0 $r3 $r3;
+            -webkit-border-radius: 0 0 $r3 $r3;
+            -moz-border-radius: 0 0 $r3 $r3;
+            -ms-border-radius: 0 0 $r3 $r3;
+            -o-border-radius: 0 0 $r3 $r3;
+            &-sub{
+                position: relative;
+                top: $R1;
+                background-color: $gray-t;
+                border-radius: $r3;
+                -webkit-border-radius: $r3 $r3;
+                -moz-border-radius: $r3 $r3;
+                -ms-border-radius: $r3 $r3;
+                -o-border-radius: $r3 $r3;
+            }
+        }      
+        &__icon{
+            @include f-n-center(end);
+            padding-right: $R2;
+
+            &-mobile{
+                font-size: $R2;
+                color: $light;
+                cursor: pointer;
+            }
+        }
+        &:hover .nav__menu{
+            @include f-center(column);
+        }
+        &__item-down{
+            flex-direction: column;
+            order: 2;
+        }  
+    }
+    .nav__icon-mobile:hover .nav__menu{
+        @include f-center(column);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .header__link{
+        padding: $space-mobile;
+        
+        &-cont{
+            font-size: $fs-mobile;
+        }
+    }
+    .header__img{
+        max-width: 5rem;
+    }
+
+    .nav{
+        height: 3rem;
+        &__menu{
+            top: 3rem;
+        }
+        &__icon{
+            padding: $space-mobile;
+        }
     }
 }

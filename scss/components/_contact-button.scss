@@ -4,7 +4,7 @@
     @include f-center(column);
     position: fixed;
     top: calc(100% - 5rem);
-    left: 93%;
+    left: calc(100% - 5rem);
 
     
     &__wpp{
@@ -19,8 +19,17 @@
 // responsive
 
 @media screen and (max-width: 1080px){
+    .fixed{
+        left: calc(100% - 3rem);
+        &__wpp-img{
+            width: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 770px){
     .fixed__wpp-img{
-        width: 3rem;
+    // left: 90%;
     }
 }
 

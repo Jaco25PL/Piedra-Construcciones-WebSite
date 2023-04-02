@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre nuestra amplia gama de servicios de construcción en Uruguay, que incluyen albañilería, renovaciones, construcción de casas, plomería, trabajos eléctricos, pintura y construcción en seco. Nuestro experimentado equipo de profesionales está dedicado a ofrecer soluciones confiables y de alta calidad para todo tipo de proyectos de construcción. Contáctanos hoy mismo para obtener un presupuesto personalizado y dar el primer paso hacia la construcción de tu hogar o proyecto soñado.">
+    <meta name="author" content="Joaquin Piedra">
+    <meta name="description" content="Descubre nuestra amplia gama de servicios de construcción en Uruguay, que incluyen albañilería, renovaciones, construcción de casas, plomería, trabajos eléctricos, pintura y construcción en seco. Nuestro experimentado equipo de profesionales está dedicado a ofrecer soluciones confiables y de alta calidad para todo tipo de proyectos de construcción.">
     <meta name="keywords" content="construcción, construcciones, Uruguay, Montevideo, edificios, casas, arquitectura, obras, inmobiliaria">
 
 <!-- link css -->
@@ -35,6 +36,9 @@
         </div>
     </header>
     <nav class="nav">
+        <div class="nav__icon">
+            <i class="nav__icon-mobile fa-solid fa-bars"></i>
+        </div>
         <ul class="nav__menu">
             <li class="nav__item"><a href="index.html" class="nav__link nav__link-inicio">Inicio</a></li>
             <li class="nav__item"><a href="pages/nosotros.html" class="nav__link">Nosotros</a></li>
@@ -45,16 +49,14 @@
                     <li class="nav__item-sub"><a href="#" class="nav__link nav__link-sub">Sanitaria</a></li>
                     <li class="nav__item-sub"><a href="#" class="nav__link nav__link-sub">Pintura</a></li>
                     <li class="nav__item-sub"><a href="#" class="nav__link nav__link-sub">Techos</a></li>
-                    <li class="nav__item-sub"><a href="#" class="nav__link nav__link-sub">Sanitaria</a></li>
                     <li class="nav__item-sub"><a href="#" class="nav__link nav__link-sub">Albañilería</a></li>
-
                 </ul>
             </li>
             <li class="nav__item"><a href="pages/proyectos.html" class="nav__link">Proyectos</a></li>
         </ul>
     </nav>
     <div class="fixed">
-        <a href="https://www.whatsapp.com" target="_blank" class="fixed__wpp">
+        <a href="pages/contactos.html" target="_blank" class="fixed__wpp">
             <img class="fixed__wpp-img" alt="WhatsApp" src="img/wpp-log.webp">
             <!-- <i class="fixed__wpp-i fa-brands fa-whatsapp"></i> -->
         </a>
@@ -65,7 +67,7 @@
         <!-- <div class="name__bg"> -->
             <div class="name__bg-text">
                 <h1 class="name__title">PIEDRA</h1>
-                <h2 class="name__sTitle">construcciones</h2>
+                <p class="name__sTitle">construcciones</p>
             </div>
         <!-- </div> -->
     </div>
@@ -140,12 +142,13 @@
         <h2 class="proyectos__title">Proyectos</h2>
         <div class="proyectos__card proyectos__card-fst">
             <h3 class="proyectos__h3"></h3>
-            <p class="proyectos__p">En nuestra empresa de construcción, nos especializamos en una amplia variedad de proyectos, desde la construcción de casas personalizadas hasta reparaciones de techos y pintura. También ofrecemos servicios de reformas de fachadas y construcción de estructuras innovadoras y complejas. Confíe en nosotros para hacer realidad cualquier proyecto de construcción que tenga en mente.</p>            <ul class="proyectos__list">
-                <li class="proyectos__list-item"><h3 class="proyectos__list-subTitle">Reforma Fachada</h3></li>
-                <li class="proyectos__list-item"><h3 class="proyectos__list-subTitle">Escaleras</h3></li>
-                <li class="proyectos__list-item"><h3 class="proyectos__list-subTitle">Estructura de Yeso</h3></li>
-                <li class="proyectos__list-item"><h3 class="proyectos__list-subTitle">Pintura</h3></li>
-                <li class="proyectos__list-item"><h3 class="proyectos__list-subTitle">Techos</h3></li>
+            <p class="proyectos__p">En nuestra empresa de construcción, nos especializamos en una amplia variedad de proyectos, desde la construcción de casas personalizadas hasta reparaciones de techos y pintura. También ofrecemos servicios de reformas de fachadas y construcción de estructuras innovadoras y complejas. Confíe en nosotros para hacer realidad cualquier proyecto de construcción que tenga en mente.</p>            
+                <ul class="proyectos__list">
+                <li class="proyectos__list-item"><p class="proyectos__list-subTitle">Reforma Fachada</p></li>
+                <li class="proyectos__list-item"><p class="proyectos__list-subTitle">Escaleras</p></li>
+                <li class="proyectos__list-item"><p class="proyectos__list-subTitle">Estructura de Yeso</p></li>
+                <li class="proyectos__list-item"><p class="proyectos__list-subTitle">Pintura</p></li>
+                <li class="proyectos__list-item"><p class="proyectos__list-subTitle">Techos</p></li>
             </ul>
         </div>
         <div class="proyectos__card proyectos__card-snd">
@@ -168,21 +171,26 @@
             </div>
     <!-- footerContacts -->
             <div class="footer__contact">
+                <div class="footer__contact-icons">
+                    <i class="footer__icons-row fa-brands fa-instagram"></i>
+                    <i class="footer__icons-row fa-brands fa-whatsapp"></i>
+                    <i class="footer__icons-row fa-regular fa-envelope"></i>
+                </div>
                 <ul class="footer__contact-list">
                     <li class="footer__contact-item">
-                        <i class="icons fa-brands fa-instagram"></i>
+                        <i class="footer__icons fa-brands fa-instagram"></i>
                         <a target="_blank" href="https://www.Instagram.com" class="footer__contact-link">
                         Instagram
                     </a></li>
 
                     <li class="footer__contact-item">
-                        <i class="icons fa-brands fa-whatsapp"></i>
+                        <i class="footer__icons fa-brands fa-whatsapp"></i>
                         <a target="_blank" href="#" class="footer__contact-link">
                         WhatsApp
                     </a></li>
 
                     <li class="footer__contact-item">
-                        <i class="icons fa-regular fa-envelope"></i>
+                        <i class="footer__icons fa-regular fa-envelope"></i>
                         <a target="_blank" href="#" class="footer__contact-link">
                         Correo1234@gmail.com
                     </a></li>
