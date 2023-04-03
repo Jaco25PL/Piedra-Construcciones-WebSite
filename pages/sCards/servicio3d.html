@@ -5,69 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Servicios 5 - Piedra Construcciones</title>
+    <title>Servicios · Render - Piedra Construcciones</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
+    
     <!-- favicon -->
-    <link rel="icon" href="../../img/favicon-2.png" type="image/png" >
-
+    <link rel="icon" href="../../img/favicon-2.webp" type="image/png" >
+    
+    <!-- link css -->
+    <link rel="stylesheet" href="../../css/style.css">
+    
     <!-- bootstrap cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+    <!-- bootstrap icnos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
 
 </head>
 <body>
 
-<!-- header -->
-    <div class="container-fluid col-sm-10 d-none d-md-block">
-        <div class="row py-4 d-flex align-items-center">
-            <div class="col">
-                <a href="../../index.html"><img  class="img-fluid" src="../../img/Logo-d.png" style="width: 9rem;"></a>
-            </div>
-            <div class="col d-flex justify-content-end">
-                <a href="../contactos.html" class="btn btn-dark fs-5">Contactos</a>
-            </div>  
-        </div>
-    </div>
-
-
-<!-- navbar menu -->
-    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
-        <div class="container-fluid col-sm-10">
-
-        <!-- logo -->
-            <a href="../../index.html" class="navbar-brand d-md-none">
-                <img class="my-2" src="../../img/Logo-w.png" style="width: 5rem;">
+<!-- header section -->
+    <header id="top" class="header">
+        <div class="header__link">
+            <a href="../../index.html" class="header__link-img">
+                <img src="../../img/Logo-d.png" alt="Piedra-Construcciones-logo" class="header__img m-1">
             </a>
-
-        <!-- menu button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-        <!-- links menu -->
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link fs-5" href="../../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link fs-5" href="../nosotros.html">Nosotros</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link fs-5 dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="../servicios.html">Servicios</a>
-                        <ul class="dropdown-menu bg-dark-subtle">
-                            <li><a class="dropdown-item fs-5" href="servicioUno.html">Servicio 1</a></li>
-                            <li><a class="dropdown-item fs-5" href="servicioDos.html">Servicio 2</a></li>
-                            <li><a class="dropdown-item fs-5" href="servicioTres.html">Servicio 3</a></li>
-                            <li><a class="dropdown-item fs-5" href="servicioCtro.html">Servicio 4</a></li>
-                            <li><a class="dropdown-item fs-5 active bg-secondary" href="servicioCnco.html">Servicio 5</a></li>
-                            <li><a class="dropdown-item fs-5" href="servicioSeis.html">Servicio 6</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link fs-5" href="../proyectos.html">Proyectos</a></li>
-                    <li class="nav-item d-md-none"><a class="nav-link fs-5" href="../contactos.html">Contactos</a></li>
-
-                </ul>
-            </div>
+            <a href="../contactos.html" class="header__link-cont fw-semibold text-decoration-none">Contacto</a>
         </div>
+    </header>
+    <nav class="nav">
+        <div class="nav__icon py-0">
+            <i class="text-light fs-1 bi bi-list"></i>
+        </div>
+        <ul class="nav__menu">
+            <li class="nav__item"><a href="../../index.html" class="nav__link nav__link-onScreen text-decoration-none">Inicio</a></li>
+            <li class="nav__item"><a href="../nosotros.html" class="nav__link text-decoration-none">Nosotros</a></li>    
+            <li class="nav__item nav__item-down">
+                <div class="nav__item-mobile-down">
+                    <a href="../../index.html#servicios" class="nav__link text-decoration-none">Servicios</a>
+                    <i class="text-light bi bi-caret-down-fill"></i>
+                </div>
+                <ul class="nav__menu-sub">
+                    <li class="nav__item-sub"><a href="servicioReforma.html" class="nav__link nav__link-sub text-decoration-none">Reformas</a></li>
+                    <li class="nav__item-sub"><a href="servicio3d.html" class="nav__link nav__link-sub text-decoration-none">Render</a></li>
+                    <li class="nav__item-sub"><a href="servicioConstruccion.html" class="nav__link nav__link-sub text-decoration-none">Construcción</a></li>
+                    <li class="nav__item-sub"><a href="servicioPintura.html" class="nav__link nav__link-sub text-decoration-none">Pintura</a></li>
+                    <li class="nav__item-sub"><a href="servicioSanitaria.html" class="nav__link nav__link-sub text-decoration-none">Sanitaria</a></li>
+                    <li class="nav__item-sub"><a href="servicioAlbañileria.html" class="nav__link nav__link-sub text-decoration-none">Albañilería</a></li>
+                </ul>
+            </li>
+            <li class="nav__item"><a href="../proyectos.html" class="nav__link text-decoration-none">Proyectos</a></li>
+        </ul>
     </nav>
+    <div class="fixed">
+        <a href="../contactos.html" target="_blank" class="fixed__wpp">
+            <img class="fixed__wpp-img" alt="WhatsApp" src="../../img/wpp-log.webp">
+        </a>
+    </div>
 
 <!-- slider section -->
     <div id="carouselExampleCaptions" class="carousel slide">
@@ -76,26 +70,26 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner"  >
         
-            <div class="carousel-item active">
-                <img src="../../img/img-w-4.jpg" class="d-block w-100" alt="wallpaper">
-                <div class="carousel-caption top-0 my-auto" style="height: fit-content; background-color: #0008;" >
-                    <h1 class="my-0 my-sm-4">Servicio Cinco</h1>
+            <div class="carousel-item active" style="max-height: 25rem;">
+                <img src="../../img/c-i-1.jpg" class="d-block w-100" alt="wallpaper">
+                <div class="carousel-caption top-0 my-auto mx-5   name__bg-text" style="height: fit-content; background-color: #0008;" >
+                    <h1 class="px-5 px-sm-0">Render</h1>
                 </div>
             </div>
 
-            <div class="carousel-item">
-                <img src="../../img/img-w-5.jpg" class="d-block w-100" alt="wallpaper">
-                <div class="carousel-caption top-0 my-auto" style="height: fit-content; background-color: #0008;" >
-                    <h1 class="my-0 my-sm-4">Servicios Cinco</h1>
+            <div class="carousel-item" style="max-height: 25rem;">
+                <img src="../../img/c-i-2.jpg" class="d-block w-100" alt="wallpaper">
+                <div class="carousel-caption top-0 my-auto px-1 py-2 name__bg-text" style="height: fit-content; background-color: #0008;" >
+                    <p class="">Un render es una imagen generada por computadora que muestra el diseño de un proyecto arquitectónico o de ingeniería.</p>
                 </div>
             </div>
 
-            <div class="carousel-item">
-                <img src="../../img/img-w-6.jpg" class="d-block w-100" alt="wallpaper">
-                <div class="carousel-caption top-0 my-auto" style="height: fit-content; background-color: #0008;" >
-                    <h1 class="my-0 my-sm-4">Servicios Cinco</h1>
+            <div class="carousel-item" style="max-height: 25rem;">
+                <img src="../../img/c-i-4.jpg" class="d-block w-100" alt="wallpaper">
+                <div class="carousel-caption top-0 my-auto px-1 py-2 name__bg-text" style="height: fit-content; background-color: #0008;" >
+                    <p class="">En Piedra Construcciones brindamos servicios de alta calidad en renderización para proyectos de construcción, utilizando la última tecnología disponible.</p>
                 </div>
             </div>
         </div>
@@ -115,117 +109,103 @@
             
     <!-- info section -->
 
-    <div class="row my-5 ">
-        <div class="col-md-5 bg-dark-subtle p-4 mb-2 d-flex flex-column justify-content-center rounded-2 align-items-center align-items-md-start">
-            <h2 class="mb-3 text-bg-danger p-1 rounded-2 fs-2" style="width: fit-content;">Servicio Cinco</h2>
-            <h3>subtitulo</h3>
-            <p class="my-3 fs-5"  style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam porro impedit voluptatibus culpa ipsum ullam enim minus, quidem animi, temporibus hic id corrupti cupiditate aliquam ratione, ea sudipisicing elit. Quisquam porro impedit voluptatibus culpa ipsum ullam enim minus, quidem animi, temporibus hic id corrupti cupiditate aliquam ratione, ea suscipit facere non!</p>
-            <a class="btn btn-dark mt-3 fs-5" style="width: fit-content;" href="../servicios.html">Volver a Servicios</a>
-        </div>
-
-<!-- imgs section -->
-
-        <div class="col-md-7 d-flex align-items-center">
-            <div class="row ">
-                <div class="col-md-6 my-2 d-flex justify-content-center">
-                    <img src="../../img/img-s-1.jpg" class="rounded-2 img-fluid" alt="servicios 1">
-                </div>
-                <div class="col-md-6 my-2 d-flex justify-content-center">
-                    <img src="../../img/img-s-2.jpg" class="rounded-2 img-fluid" alt="servicios 1">
-                </div>
-                <div class="col-md-6 my-2 d-flex justify-content-center">
-                    <img src="../../img/img-s-3.jpg" class="rounded-2 img-fluid"alt="servicios 1">
-                </div>
-                <div class="col-md-6 my-2 d-flex justify-content-center">
-                    <img src="../../img/img-s-4.jpg" class="rounded-2 img-fluid"  alt="servicios 1">
-                </div>
-                <div class="col-md-6 my-2 d-flex justify-content-center">
-                    <img  src="../../img/img-s-5.jpg" class="rounded-2 img-fluid"alt="servicios 1">
-                </div>
-                <div class="col-md-6 my-2 d-flex justify-content-center">
-                    <img src="../../img/img-s-6.jpg" class="rounded-2 img-fluid"  alt="servicios 1">
-                </div>
+        <div class="row my-5">
+            <div class="col-md-5 p-4 mb-2 d-flex flex-column justify-content-center rounded-2 align-items-center align-items-md-start" style="background-color: #0001; height: fit-content;">
+                <h2 class="mb-3 text-bg-danger p-1 rounded-2 fs-2" style="width: fit-content;">Render</h2>
+                <p class="fs-4 fw-semibold text-sm-start text-center ">Visualiza tu proyecto antes de empezar</p>
+                <p class="" style="text-align: justify;">En nuestra empresa, ofrecemos servicios de renderización para proyectos de construcción, lo que significa que podemos crear una representación visual precisa y detallada de su diseño en 2D o 3D. Esto le permite tener una idea clara de cómo se verá el proyecto antes de que se construya, y realizar cualquier cambio necesario para que el resultado final cumpla con sus expectativas. ¡No más sorpresas desagradables después de la construcción! ¡Trabaje con nosotros para obtener el proyecto de sus sueños!</p>
+                <p class="bg-dark-subtle p-2 rounded-1 text-md-start text-center">Aqui tienes algunos ejemplos de nuestros renders</p>
+                <a class="btn btn-dark mt-3 fs-5" style="width: fit-content;" href="../servicios.html">Volver al Inicio</a>
             </div>
-        </div>    
-    </div>
-</div>  
+
+    <!-- imgs section -->
+
+            <div class="col-md-7 d-flex align-items-center">
+                <div class="row ">
+                    <div class="col-lg-6 my-2 d-flex justify-content-center">
+                        <img src="../../img/proyecto-4.5.jpg" class="rounded-2 img-fluid" alt="servicios 1">
+                    </div>
+                    <div class="col-lg-6 my-2 d-flex justify-content-center">
+                        <img src="../../img/proyecto-5.1.jpg" class="rounded-2 img-fluid" alt="servicios 1">
+                    </div>
+                    <div class="col-lg-6 my-2 d-flex justify-content-center">
+                        <img src="../../img/proyecto-6.2.jpg" class="rounded-2 img-fluid"alt="servicios 1">
+                    </div>
+                    <div class="col-lg-6 my-2 d-flex justify-content-center">
+                        <img src="../../img/proyecto-1.4.jpg" class="rounded-2 img-fluid"  alt="servicios 1">
+                    </div>
+                    <div class="col-lg-6 my-2 d-flex justify-content-center">
+                        <img  src="../../img/render-4.jpg" class="rounded-2 img-fluid"alt="servicios 1">
+                    </div>
+                    <div class="col-lg-6 my-2 d-flex justify-content-center">
+                        <img src="../../img/render-2.jpg" class="rounded-2 img-fluid"  alt="servicios 1">
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>  
 
 <!-- footer -->
-
-<footer class="bg-dark text-light">
-    <div class="container">
-        <div class="row d-flex align-items-center flex-column-reverse flex-md-row">
-
-<!-- form for small devices -->
-
-            <div class="d-md-none d-flex justify-content-center my-3  order-3 ">
-                <h2 class="text-uppercase text-bg-danger p-2 rounded-2">Contactanos</h2>
+<footer class="footer">
+    <div class="footer__top">
+<!-- footerLogo -->
+        <div class="footer__logo">
+            <a href="#"><img src="../../img/Logo-c-w.png" alt="logo" class="footer__logo-item"></a>
+        </div>
+<!-- footerContacts -->
+        <div class="footer__contact">
+            <div class="footer__contact-icons">
+                <i class="bi bi-instagram text-light-emphasis"></i>
+                <i class="bi bi-whatsapp text-light-emphasis"></i>
+                <i class="bi bi-envelope text-light-emphasis"></i>
             </div>
+            <ul class="footer__contact-list p-0">
+                <li class="footer__contact-item">
+                    <i class="bi bi-instagram text-light d-none d-md-block"></i>
+                    <a target="_blank" href="https://www.Instagram.com/piedra.construcciones/" class="footer__contact-link text-decoration-none">
+                    Instagram
+                </a></li>
 
-            <form class="d-md-none mb-2 order-2">
-                <div class="mb-3">
-                  <input type="text" class="form-control" placeholder="Nombre" name="name" required>
-                </div>
+                <li class="footer__contact-item">
+                    <i class="bi bi-whatsapp text-light d-none d-md-block"></i>
+                    <a target="_blank" href="#" class="footer__contact-link text-decoration-none">
+                    WhatsApp
+                </a></li>
+
+                <li class="footer__contact-item">
+                    <i class="bi bi-envelope text-light d-none d-md-block"></i>
+                    <a target="_blank" href="#" class="footer__contact-link text-decoration-none">
+                    Correo1234@gmail.com
+                </a></li>
             
-                <div class="mb-3">
-                  <input type="email" class="form-control" placeholder="Correo Electronico" name="email" required>
-                </div>
-            
-                <div class="mb-3">
-                  <input type="text" class="form-control" placeholder="Asunto" name="subject" required>
-                </div>
-            
-                <div class="mb-3">
-                  <textarea class="form-control" placeholder="Mensaje" name="message" rows="4" required></textarea>
-                </div>
-            
-                <button type="submit" class="btn btn-primary float-end">Enviar</button>
-            </form>
-      
+            </ul>
+        </div>
+<!-- footerNav -->
+        <div class="footer__nav">
+            <ul class="footer__nav-list p-0">
+                <li class="footer__nav-item">
+                    <a href="../contactos.html" class="footer__nav-link text-decoration-none">Contactos</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="../nosotros.html" class="footer__nav-link text-decoration-none">Nosotros</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="../../index.html#servicios" class="footer__nav-link text-decoration-none">Servicios</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="../proyectos.html" class="footer__nav-link text-decoration-none">Proyectos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <span class="footer__bottom-copyright">© Piedra construcciones Todos los derechos reservados.</span>
+        <span><a href="#" class="footer__bottom-tyc">Terminos y Condiciones</a></span>
+    </div>
+</footer>
 
-   <!-- logo -->
-   <div class="col-md-4 d-flex justify-content-center">
-    <a href="#"><img style="width: 12rem;" class="my-5" src="../../img/Logo-c-w.png" alt="Logo"></a>
-</div>
-
-<!-- media -->
-<div class="col-md-4 d-flex justify-content-center my-4 order-1 order-md-0">
-    <ul class="list-unstyled fs-5">
-        <li><a class="link-light text-decoration-none" href="https://www.whatsapp.com" target="_blank"><i class="pe-3 bi bi-whatsapp"></i> WhatsApp</a></li>
-        <li><a class="link-light text-decoration-none" href="https://www.instagram.com" target="_blank"><i class="pe-3 bi bi-instagram"></i> Instagram</a></li>
-        <li><a class="link-light text-decoration-none" href="https://www.gmail.com" target="_blank"><i class="pe-3 bi bi-envelope"></i> Correo1234@gmail.com</a></li>
-    </ul>
-</div>
-
-<hr class="d-md-none w-75 m-auto">
-
-<!-- footer navbar -->
-<div class="col-md-4 d-flex justify-content-center my-4">
-    <ul class="list-unstyled fs-5">
-        <li><a class="link-light text-decoration-none" href="../../index.html">Inicio</a></li>
-        <li><a class="link-light text-decoration-none" href="../nosotros.html">Nosotros</a></li>
-        <li><a class="link-light text-decoration-none" href="../servicios.html">Servicios</a></li>
-        <li><a class="link-light text-decoration-none" href="../proyectos.html">Proyectos</a></li>
-    </ul>
-</div>
-
-<hr class="d-md-none w-75 m-auto mb-3">
-</div>
-
-<hr class="m-0">
-
-<!-- copyright section -->
-<div class="container py-4">
-<div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
-<span class="text-secondary pe-0 pe-md-4 text-center">© <b>Piedra Construcciones</b> Todos los derechos reservados.</span>
-<span><a href="#" class="text-decoration-none text-secondary fw-bold">Terminos y Condiciones</a></span>
-</div>
-</div>
-</div>
-</footer>  
-
-<!-- js for bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- js for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 </html>
