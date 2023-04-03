@@ -1,0 +1,42 @@
+
+.laEmpresa__img{
+    display: none;
+}
+
+// responsive
+
+@media screen and (max-width: 800px) {
+    .laEmpresa{
+        @include f-center(column);
+        overflow: hidden;
+    }
+
+    .laEmpresa__img{
+        @include f-center(column);
+        background-image: url(../../img/work-team-vertical.jpg);
+        background-attachment: fixed;
+        background-position: center center;
+        margin: 0;
+        height: 16rem;
+        width: 100vw;
+        &-p{        
+            color: $light;
+            font-weight: weight(normal);
+            margin: $R2;
+            padding: 1.5rem;
+            text-align: center;
+            background-color: $dark-t;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .laEmpresa{
+        overflow: hidden;
+    }
+    .laEmpresa__img{
+        width: 500px;
+    }
+
+} 
+
