@@ -33,7 +33,6 @@
     -moz-border-radius: $r3;
     -ms-border-radius: $r3;
     -o-border-radius: $r3;
-
     &__title{
         grid-area: title;
         font-size: $fs-3;
@@ -41,7 +40,7 @@
         color: $light;
         background-color: $dark-t;
         width: fit-content;
-        padding: $r3 $R1;
+        padding: $r3 $R1;   
         border-radius: $r3;
         transition: $soft;
         -webkit-border-radius: $r3;
@@ -95,7 +94,7 @@
                 grid-area: frtCard;
             }
             &:hover{
-                box-shadow: 0 .3rem .8rem rgba(0, 0, 0, 0.3);
+                box-shadow: $box;
             }
             &:hover &__h3{
                 box-shadow: 0 3px 0 rgb(255, 99, 71);   
@@ -130,18 +129,75 @@
     margin: $margin-section;
     border-radius: $r3;
     padding: $R2;
-    display: grid;
-    grid-template-areas: 
-    "title title"
-    "fstCard sndCard"
-    "btn btn";
-    gap: $R2;
-
     &__title{
         @extend .laEmpresa__title;
-        grid-area: title;
     }
-    
+    &__cards{
+        margin: $R2 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        gap: $R2;
+    }
+    &__card{
+        @include f-n-center(space-between);
+        flex-direction: column;
+        max-width: 330px;
+        background-color: $light-c;
+        padding: $R2;
+        border-radius: $r3;
+        -webkit-border-radius: $r3;
+        -moz-border-radius: $r3;
+        -ms-border-radius: $r3;
+        -o-border-radius: $r3;
+        transition: $soft;
+        -webkit-transition: $soft;
+        -moz-transition: $soft;
+        -ms-transition: $soft;
+        -o-transition: $soft;
+        &:hover{
+            box-shadow: $box;
+            
+            & .servicios__card-sTitle{
+                transition: $soft;
+                -webkit-transition: $soft;
+                -moz-transition: $soft;
+                -ms-transition: $soft;
+                -o-transition: $soft;
+                color: $tomato;
+            }
+        }
+        &-logo{
+            width: 150px;   
+            margin-bottom: $R13;
+        }
+        &-p{
+            margin: $R1;
+            text-align: center  ;
+            font-size: $fs-1;
+        }
+    }
+}
+
+
+
+// mainPage proyectos section
+.proyectos{
+    background-color: $light;
+    margin: $margin-section;
+    border-radius: $r3;
+    padding: $R2;
+    display: grid;
+    grid-template-areas:     
+    "title title"    
+    "fstCard sndCard"    
+    "btn btn";
+    gap: $R2;
+        &__title{
+        grid-area: title;
+        @extend .laEmpresa__title;
+        }
+
     &__card{
         @extend .laEmpresa__card;
 
@@ -161,92 +217,15 @@
         &-img{
             width: 100%;
             height: auto;
+            border-radius: $r3;
+            -webkit-border-radius: $r3;
+            -moz-border-radius: $r3;
+            -ms-border-radius: $r3;
+            -o-border-radius: $r3;
             &-two{
-                display: none;
+            display: none;
+            
             }
-        }
-    }
-    &__p{
-        font-size: $fs-1;
-        text-align: justify;
-    }
-    &__list{
-        margin-top: $R2;
-        @include f-center(row);
-        &-left{
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-        }
-        &-right{
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-        }
-    }
-    &__item{
-        list-style-type: none;
-        margin: $r8 $r3;
-        transition: $soft;
-        -webkit-transition: $soft;
-        -moz-transition: $soft;
-        -ms-transition: $soft;
-        -o-transition: $soft;
-        &:hover{
-            transform: scale(.95);
-            -webkit-transform: scale(.95);
-            -moz-transform: scale(.95);
-            -ms-transform: scale(.95);
-            -o-transform: scale(.95);
-        }
-    }
-    &__link{
-        padding: $r5 $r8;
-        font-size: $fs-1;
-        font-weight: weight(normal);
-        color: $dark;
-        border: 3px solid $dark;
-        border-radius: $R1;
-        transition: $soft;
-        -webkit-border-radius: $R1;
-        -moz-border-radius: $R1;
-        -ms-border-radius: $R1;
-        -o-border-radius: $R1;
-        -webkit-transition: $soft;
-        -moz-transition: $soft;
-        -ms-transition: $soft;
-        -o-transition: $soft;
-        &:hover{
-            border: 3px solid $tomato;
-            color: $tomato;
-          }
-}
-    &-btn{
-        grid-area: btn;
-    }
-}
-
-// mainPage proyectos section
-.proyectos{
-
-    @extend .servicios; 
-    
-    &__title{
-        grid-area: title;
-        @extend .laEmpresa__title;
-    }
-
-    &__card{
-        @extend .laEmpresa__card;
-
-        &-fst{
-            @extend .servicios__card-fst;
-        }
-        &-snd{
-            @extend .servicios__card-snd;
-        }
-        &-img{
-            @extend .servicios__card-img;
         }
     }
 
@@ -275,14 +254,14 @@
 // responsiev
 
 @media screen and (max-width: 1080px){
-    .laEmpresa, .servicios, .proyectos{
+    .laEmpresa, .proyectos{
         padding: $r8;
         gap: $r8;
     }
-    .servicios__card-img-two{
+    .proyectos__card-img-two{
         display: flex;
     }
-    .servicios__card-snd{
+    .proyectos__card-snd{
         background-color: transparent;
         @include f-center(column);
         gap: $R1;
@@ -294,24 +273,22 @@
             box-shadow: none;
         }
     }
-    .servicios__card-img{
-        width: 100%;   
-        height: auto;
-    }
-    .servicios__item{
-        margin: $r5 $r3;
-        white-space: nowrap;
-    }
-    .servicios__link{
-        padding: $r3;
-    }
     .proyectos{
         grid-template-areas:
         "title title title"
         "fstCard fstCard sndCard"
         "btn btn btn";
     }
-
+    .servicios{
+        padding: $r8;
+    }
+    .servicios__cards{
+        margin: $R1 0;
+        gap: 1rem;
+    }
+    .servicios__card{
+        padding: $r5 0;
+    }
 }
 
 // responsive for proyects section
@@ -320,7 +297,7 @@
         display: flex;
         flex-direction: column;
     }
-    .servicios{
+    .proyectos{
         display: flex;
         flex-direction: column;
         &__card-fst{
@@ -340,6 +317,9 @@
             }
         }
     }
+    .servicios__cards{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -354,16 +334,14 @@
             @include f-center(column);
         }
     }
-    .servicios__list{
-        gap: 0;
-        display: flex;
-        flex-direction: row;
-        &-left, &-right{
-            flex-direction: column;
-            gap: $r3;
-        }
-    }
     .proyectos__list{
-        @include f-center(column)
+        @include f-center(column);
+        gap: 0;  
+    }
+    .servicios__cards{
+        grid-template-columns: 1fr;
+    }
+    .servicios__card{
+        padding: $R13 0;
     }
 }

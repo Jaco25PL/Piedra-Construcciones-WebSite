@@ -626,7 +626,7 @@ a {
   background-color: rgb(255, 99, 71);
   cursor: default;
 }
-.laEmpresa__card, .proyectos__card, .servicios__card {
+.laEmpresa__card, .proyectos__card {
   background-color: rgba(0, 0, 0, 0.0666666667);
   border-radius: 0.3rem;
   transition: all ease-out 0.3s;
@@ -640,7 +640,7 @@ a {
   -ms-transition: all ease-out 0.3s;
   -o-transition: all ease-out 0.3s;
 }
-.laEmpresa__card:hover .laEmpresa__h3, .proyectos__card:hover .laEmpresa__h3, .servicios__card:hover .laEmpresa__h3 {
+.laEmpresa__card:hover .laEmpresa__h3, .proyectos__card:hover .laEmpresa__h3 {
   color: rgb(255, 99, 71);
 }
 .laEmpresa__card-fst {
@@ -661,10 +661,10 @@ a {
 .laEmpresa__card-frt {
   grid-area: frtCard;
 }
-.laEmpresa__card:hover, .proyectos__card:hover, .servicios__card:hover {
+.laEmpresa__card:hover, .proyectos__card:hover {
   box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.3);
 }
-.laEmpresa__card:hover .laEmpresa__card__h3, .proyectos__card:hover .laEmpresa__card__h3, .servicios__card:hover .laEmpresa__card__h3 {
+.laEmpresa__card:hover .laEmpresa__card__h3, .proyectos__card:hover .laEmpresa__card__h3 {
   box-shadow: 0 3px 0 rgb(255, 99, 71);
 }
 .laEmpresa__video {
@@ -688,7 +688,60 @@ a {
   text-align: justify;
 }
 
-.servicios, .proyectos {
+.servicios {
+  background-color: #fff;
+  margin: 2rem 8%;
+  border-radius: 0.3rem;
+  padding: 1.8rem;
+}
+.servicios__cards {
+  margin: 1.8rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 1.8rem;
+}
+.servicios__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  max-width: 330px;
+  background-color: rgba(0, 0, 0, 0.0666666667);
+  padding: 1.8rem;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  transition: all ease-out 0.3s;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -ms-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+}
+.servicios__card:hover {
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+.servicios__card:hover .servicios__card-sTitle {
+  transition: all ease-out 0.3s;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -ms-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  color: rgb(255, 99, 71);
+}
+.servicios__card-logo {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+.servicios__card-p {
+  margin: 0.8rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.proyectos {
   background-color: #fff;
   margin: 2rem 8%;
   border-radius: 0.3rem;
@@ -697,14 +750,14 @@ a {
   grid-template-areas: "title title" "fstCard sndCard" "btn btn";
   gap: 1.8rem;
 }
-.servicios__title {
+.proyectos__title {
   grid-area: title;
 }
-.servicios__card-fst, .proyectos__card-fst {
+.proyectos__card-fst {
   grid-area: fstCard;
   max-width: 500px;
 }
-.servicios__card-snd, .proyectos__card-snd {
+.proyectos__card-snd {
   grid-area: sndCard;
   overflow: hidden;
   padding: 0;
@@ -713,77 +766,17 @@ a {
   display: flex;
   align-self: center;
 }
-.servicios__card-img, .proyectos__card-img {
+.proyectos__card-img {
   width: 100%;
   height: auto;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
 }
-.servicios__card-img-two {
+.proyectos__card-img-two {
   display: none;
-}
-.servicios__p {
-  font-size: 1.1rem;
-  text-align: justify;
-}
-.servicios__list {
-  margin-top: 1.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.servicios__list-left {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-}
-.servicios__list-right {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-.servicios__item {
-  list-style-type: none;
-  margin: 0.8rem 0.3rem;
-  transition: all ease-out 0.3s;
-  -webkit-transition: all ease-out 0.3s;
-  -moz-transition: all ease-out 0.3s;
-  -ms-transition: all ease-out 0.3s;
-  -o-transition: all ease-out 0.3s;
-}
-.servicios__item:hover {
-  transform: scale(0.95);
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  -o-transform: scale(0.95);
-}
-.servicios__link {
-  padding: 0.5rem 0.8rem;
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: #232323;
-  border: 3px solid #232323;
-  border-radius: 0.8rem;
-  transition: all ease-out 0.3s;
-  -webkit-border-radius: 0.8rem;
-  -moz-border-radius: 0.8rem;
-  -ms-border-radius: 0.8rem;
-  -o-border-radius: 0.8rem;
-  -webkit-transition: all ease-out 0.3s;
-  -moz-transition: all ease-out 0.3s;
-  -ms-transition: all ease-out 0.3s;
-  -o-transition: all ease-out 0.3s;
-}
-.servicios__link:hover {
-  border: 3px solid rgb(255, 99, 71);
-  color: rgb(255, 99, 71);
-}
-.servicios-btn {
-  grid-area: btn;
-}
-
-.proyectos__title {
-  grid-area: title;
 }
 .proyectos__p {
   text-align: justify;
@@ -805,14 +798,14 @@ a {
 }
 
 @media screen and (max-width: 1080px) {
-  .laEmpresa, .servicios, .proyectos {
+  .laEmpresa, .proyectos {
     padding: 0.8rem;
     gap: 0.8rem;
   }
-  .servicios__card-img-two {
+  .proyectos__card-img-two {
     display: flex;
   }
-  .servicios__card-snd, .proyectos__card-snd {
+  .proyectos__card-snd {
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -824,22 +817,21 @@ a {
     min-width: 280px;
     overflow: hidden;
   }
-  .servicios__card-snd:hover, .proyectos__card-snd:hover {
+  .proyectos__card-snd:hover {
     box-shadow: none;
-  }
-  .servicios__card-img, .proyectos__card-img {
-    width: 100%;
-    height: auto;
-  }
-  .servicios__item {
-    margin: 0.5rem 0.3rem;
-    white-space: nowrap;
-  }
-  .servicios__link {
-    padding: 0.3rem;
   }
   .proyectos {
     grid-template-areas: "title title title" "fstCard fstCard sndCard" "btn btn btn";
+  }
+  .servicios {
+    padding: 0.8rem;
+  }
+  .servicios__cards {
+    margin: 0.8rem 0;
+    gap: 1rem;
+  }
+  .servicios__card {
+    padding: 0.5rem 0;
   }
 }
 @media screen and (max-width: 800px) {
@@ -847,25 +839,28 @@ a {
     display: flex;
     flex-direction: column;
   }
-  .servicios, .proyectos {
+  .proyectos {
     display: flex;
     flex-direction: column;
   }
-  .servicios__card-fst, .proyectos__card-fst {
+  .proyectos__card-fst {
     max-width: none;
   }
-  .servicios__card-img, .proyectos__card-img {
+  .proyectos__card-img {
     max-width: 20rem;
   }
-  .servicios__list {
+  .proyectos__list {
     flex-direction: column;
     gap: 0.5rem;
   }
-  .servicios__list-left {
+  .proyectos__list-left {
     flex-direction: row;
   }
-  .servicios__list-right {
+  .proyectos__list-right {
     flex-direction: row;
+  }
+  .servicios__cards {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (max-width: 480px) {
@@ -880,26 +875,24 @@ a {
     font-size: 1.5rem;
     background-color: rgba(255, 99, 71, 0.7);
   }
-  .laEmpresa__card, .servicios__card, .proyectos__card {
+  .laEmpresa__card, .proyectos__card, .servicios__card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  .servicios__list {
-    gap: 0;
-    display: flex;
-    flex-direction: row;
-  }
-  .servicios__list-left, .servicios__list-right {
-    flex-direction: column;
-    gap: 0.3rem;
   }
   .proyectos__list {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 0;
+  }
+  .servicios__cards {
+    grid-template-columns: 1fr;
+  }
+  .servicios__card {
+    padding: 1rem 0;
   }
 }
 .laEmpresa__img {
@@ -919,7 +912,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(../../img/work-team-vertical.jpg);
+    background-image: url(../img/work-team-vertical.jpg);
     background-attachment: fixed;
     background-position: center center;
     margin: 0;
