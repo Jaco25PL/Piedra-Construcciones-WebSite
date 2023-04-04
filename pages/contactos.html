@@ -1,113 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comunicate con nosotros de manera fácil y rápida. ¡Contáctanos hoy y descubre cómo podemos ayudarte con tus proyectos de construcción!">
+    <meta name="keywords" content="piedra construcciones, construcción, contactos, proyectos, obras, edificación">
+    
+    <title>Contactos - Piedra Construcciones</title>
 
-    <!-- bootstrap icons cdn link -->
+    <!-- favicon -->
+    <link rel="icon" href="../../img/favicon-2.webp" type="image/png" >
+    
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+    <!-- bootstrap icnos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     
-    <!-- bootstrap cdn link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
-    <!-- favicon -->
-    <link rel="icon" href="../img/favicon-2.png" type="image/png" >
 
-    <title>Contactos - Piedra Construcciones</title>
 </head>
 <body>
     
-    <!-- header -->
-    <div class="container-fluid col-sm-10 d-none d-md-block">
-        <div class="row py-4 d-flex align-items-center">
-            <div class="col">
-                <a href="../index.html"><img  class="img-fluid" src="../img/Logo-d.png" style="width: 9rem;"></a>
+    <!-- header section -->
+        <header id="top" class="header">
+            <div class="header__link">
+                <a href="../index.html" class="header__link-img">
+                    <img src="../img/Logo-d.png" alt="Piedra-Construcciones-logo" class="header__img m-1">
+                </a>
+                <a href="contactos.html" class="header__link-cont fw-semibold text-decoration-none">Contacto</a>
             </div>
-            <div class="col d-flex justify-content-end">
-                <a href="contactos.html" class="btn btn-dark fs-5">Contactos</a>
-            </div>  
-        </div>
-    </div>
-
-
-<!-- navbar menu -->
-    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
-        <div class="container-fluid col-sm-10">
-
-        <!-- logo -->
-            <a href="../index.html" class="navbar-brand d-md-none">
-                <img class="my-2" src="../img/Logo-w.png"  style="width: 5rem;">
+        </header>
+        <nav class="nav">
+            <div class="nav__icon py-0">
+                <i class="text-light fs-1 bi bi-list"></i>
+            </div>
+            <ul class="nav__menu">
+                <li class="nav__item"><a href="../index.html" class="nav__link nav__link-onScreen text-decoration-none">Inicio</a></li>
+                <li class="nav__item"><a href="nosotros.html" class="nav__link text-decoration-none">Nosotros</a></li>    
+                <li class="nav__item nav__item-down">
+                    <div class="nav__item-mobile-down">
+                        <a href="../index.html#servicios" class="nav__link text-decoration-none">Servicios</a>
+                        <i class="text-light bi bi-caret-down-fill mx-2"></i>
+                    </div>
+                    <ul class="nav__menu-sub">
+                        <li class="nav__item-sub"><a href="sCards/servicioReforma.html" class="nav__link nav__link-sub text-decoration-none">Reformas</a></li>
+                        <li class="nav__item-sub"><a href="sCards/servicio3d.html" class="nav__link nav__link-sub text-decoration-none">Render</a></li>
+                        <li class="nav__item-sub"><a href="sCards/servicioConstruccion.html" class="nav__link nav__link-sub text-decoration-none">Construcción</a></li>
+                        <li class="nav__item-sub"><a href="sCards/servicioPintura.html" class="nav__link nav__link-sub text-decoration-none">Pintura</a></li>
+                        <li class="nav__item-sub"><a href="sCards/servicioSanitaria.html" class="nav__link nav__link-sub text-decoration-none">Sanitaria</a></li>
+                        <li class="nav__item-sub"><a href="sCards/servicioAlbañileria.html" class="nav__link nav__link-sub text-decoration-none">Albañilería</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="proyectos.html" class="nav__link text-decoration-none">Proyectos</a></li>
+            </ul>
+        </nav>
+        <div class="fixed">
+            <a href="contactos.html" target="_blank" class="fixed__wpp">
+                <img class="fixed__wpp-img" alt="WhatsApp" src="../img/wpp-log.webp">
             </a>
-
-        <!-- menu button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        </div>
+    
+    <!-- slider section -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators mb-0 mb-sm-3">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner"  >
+            
+                <div class="carousel-item active" style="max-height: 25rem;">
+                    <img src="../img/c-i-1.jpg" class="d-block w-100" alt="wallpaper">
+                    <div class="carousel-caption top-0 my-auto mx-5   name__bg-text" style="height: fit-content; background-color: #0008;" >
+                        <h1 class="px-5 px-sm-0">Contactos</h1>
+                    </div>
+                </div>
+    
+                <div class="carousel-item" style="max-height: 25rem;">
+                    <img src="../img/c-i-2.jpg" class="d-block w-100" alt="wallpaper">
+                </div>
+    
+                <div class="carousel-item" style="max-height: 25rem;">
+                    <img src="../img/c-i-6.jpg" class="d-block w-100" alt="wallpaper">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-
-        <!-- links menu -->
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link fs-5" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link fs-5" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link fs-5 dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="../index.html#servicios">Servicios</a>
-                        <ul class="dropdown-menu bg-dark-subtle">
-                            <li><a class="dropdown-item fs-5" href="sCards/servicioUno.html">Servicio 1</a></li>
-                            <li><a class="dropdown-item fs-5" href="sCards/servicioDos.html">Servicio 2</a></li>
-                            <li><a class="dropdown-item fs-5" href="sCards/servicioTres.html">Servicio 3</a></li>
-                            <li><a class="dropdown-item fs-5" href="sCards/servicioCtro.html">Servicio 4</a></li>
-                            <li><a class="dropdown-item fs-5" href="sCards/servicioCnco.html">Servicio 5</a></li>
-                            <li><a class="dropdown-item fs-5" href="sCards/servicioSeis.html">Servicio 6</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link fs-5" href="proyectos.html">Proyectos</a></li>
-                    <li class="nav-item d-md-none"><a class="nav-link fs-5" href="contacto.html">Contactos</a></li>
-
-                </ul>
-            </div>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </nav>
 
-<!-- slider - section -->
-    <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators mb-0 mb-sm-3">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-        
-            <div class="carousel-item active">
-                <img src="../img/img-w-4.jpg" class="d-block w-100" alt="wallpaper">
-                <div class="carousel-caption top-0 my-auto" style="height: fit-content; background-color: #0008;" >
-                    <h1 class="my-0 my-sm-4">Contactos</h1>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <img src="../img/img-w-5.jpg" class="d-block w-100" alt="wallpaper">
-                <div class="carousel-caption top-0 my-auto" style="height: fit-content; background-color: #0008;" >
-                    <h1 class="my-0 my-sm-4">Contactos</h1>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <img src="../img/img-w-6.jpg" class="d-block w-100" alt="wallpaper">
-                <div class="carousel-caption top-0 my-auto" style="height: fit-content; background-color: #0008;" >
-                    <h1 class="my-0 my-sm-4">Contactos</h1>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
 <!-- main section -->
     <main class="container py-5">
@@ -171,48 +161,61 @@
   
 <!-- footer -->
 
-    <footer class="bg-dark text-light">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-
-          <!-- logo -->
-                <div class="col-md-4 d-flex justify-content-center">
-                    <a href="#"><img style="width: 12rem;" class="my-5" src="../img/Logo-c-w.png" alt="Logo"></a>
-                </div>
-
-        <!-- media -->
-                <div class="col-md-4 d-flex justify-content-center my-4 order-1 order-md-0">
-                    <ul class="list-unstyled fs-5">
-                        <li><a class="link-light text-decoration-none" href="https://www.whatsapp.com" target="_blank"><i class="pe-3 bi bi-whatsapp"></i> WhatsApp</a></li>
-                        <li><a class="link-light text-decoration-none" href="https://www.instagram.com" target="_blank"><i class="pe-3 bi bi-instagram"></i> Instagram</a></li>
-                        <li><a class="link-light text-decoration-none" href="https://www.gmail.com" target="_blank"><i class="pe-3 bi bi-envelope"></i> Correo1234@gmail.com</a></li>
-                    </ul>
-                </div>
-
-                <hr class="d-md-none w-75 m-auto">
-
-        <!-- footer navbar -->
-                <div class="col-md-4 d-flex justify-content-center my-4">
-                    <ul class="list-unstyled fs-5">
-                        <li><a class="link-light text-decoration-none" href="../index.html">Inicio</a></li>
-                        <li><a class="link-light text-decoration-none" href="nosotros.html">Nosotros</a></li>
-                        <li><a class="link-light text-decoration-none" href="servicios.html">Servicios</a></li>
-                        <li><a class="link-light text-decoration-none" href="proyectos.html">Proyectos</a></li>
-                    </ul>
-                </div>
-
-                <hr class="d-md-none w-75 m-auto mb-3">
+    <footer class="footer">
+        <div class="footer__top">
+    <!-- footerLogo -->
+            <div class="footer__logo">
+                <a href="#"><img src="../img/Logo-c-w.png" alt="logo" class="footer__logo-item"></a>
             </div>
+    <!-- footerContacts -->
+            <div class="footer__contact">
+                <div class="footer__contact-icons">
+                    <i class="bi bi-instagram text-light-emphasis"></i>
+                    <i class="bi bi-whatsapp text-light-emphasis"></i>
+                    <i class="bi bi-envelope text-light-emphasis"></i>
+                </div>
+                <ul class="footer__contact-list p-0">
+                    <li class="footer__contact-item">
+                        <i class="bi bi-instagram text-light d-none d-md-block"></i>
+                        <a target="_blank" href="https://www.Instagram.com/piedra.construcciones/" class="footer__contact-link text-decoration-none">
+                        Instagram
+                    </a></li>
 
-            <hr class="m-0">
+                    <li class="footer__contact-item">
+                        <i class="bi bi-whatsapp text-light d-none d-md-block"></i>
+                        <a target="_blank" href="#" class="footer__contact-link text-decoration-none">
+                        WhatsApp
+                    </a></li>
 
-        <!-- copyright section -->
-        <div class="container py-4">
-            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
-              <span class="text-secondary pe-0 pe-md-4 text-center">© <b>Piedra Construcciones</b> Todos los derechos reservados.</span>
-              <span><a href="#" class="text-decoration-none text-secondary fw-bold">Terminos y Condiciones</a></span>
+                    <li class="footer__contact-item">
+                        <i class="bi bi-envelope text-light d-none d-md-block"></i>
+                        <a target="_blank" href="#" class="footer__contact-link text-decoration-none">
+                        Correo1234@gmail.com
+                    </a></li>
+                
+                </ul>
             </div>
-          </div>
+    <!-- footerNav -->
+            <div class="footer__nav">
+                <ul class="footer__nav-list p-0">
+                    <li class="footer__nav-item">
+                        <a href="contactos.html" class="footer__nav-link text-decoration-none">Contactos</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="nosotros.html" class="footer__nav-link text-decoration-none">Nosotros</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="../index.html#servicios" class="footer__nav-link text-decoration-none">Servicios</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="proyectos.html" class="footer__nav-link text-decoration-none">Proyectos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span class="footer__bottom-copyright">© Piedra construcciones Todos los derechos reservados.</span>
+            <span><a href="#" class="footer__bottom-tyc">Terminos y Condiciones</a></span>
         </div>
     </footer>
 

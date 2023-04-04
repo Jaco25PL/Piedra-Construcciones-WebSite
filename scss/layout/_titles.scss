@@ -64,6 +64,9 @@
 }
 
 @media screen and (max-width: 480px) {
+    .name{
+        background-position: 24rem 0;
+    }
     .name__title{
         font-size: 3rem;
     }

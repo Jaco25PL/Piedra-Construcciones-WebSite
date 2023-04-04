@@ -58,7 +58,7 @@
     padding: 0 12%;
     position: sticky;
     top: 0;
-    z-index: 30;
+    z-index: 60;
     height: 4rem;
     @include f-n-center(flex-end);
     
@@ -73,6 +73,7 @@
         &-sub{
             display: none;
             position: absolute;
+            z-index: 50;
             top: 4rem;
             padding-top: $R1;
             width: 13rem;

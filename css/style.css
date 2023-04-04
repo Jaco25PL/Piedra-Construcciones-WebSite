@@ -108,7 +108,7 @@ a {
   padding: 0 12%;
   position: sticky;
   top: 0;
-  z-index: 30;
+  z-index: 60;
   height: 4rem;
   display: flex;
   justify-content: flex-end;
@@ -129,6 +129,7 @@ a {
 .nav__menu-sub {
   display: none;
   position: absolute;
+  z-index: 50;
   top: 4rem;
   padding-top: 0.8rem;
   width: 13rem;
@@ -352,6 +353,9 @@ a {
   }
 }
 @media screen and (max-width: 480px) {
+  .name {
+    background-position: 24rem 0;
+  }
   .name__title {
     font-size: 3rem;
   }
@@ -361,7 +365,7 @@ a {
 }
 .footer {
   position: relative;
-  z-index: 40;
+  z-index: 20;
   background-color: #232323;
   padding-top: 0.8rem;
 }
