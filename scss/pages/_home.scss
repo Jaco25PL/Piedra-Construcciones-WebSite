@@ -193,7 +193,7 @@
     "fstCard sndCard"    
     "btn btn";
     gap: $R2;
-        &__title{
+    &__title{
         grid-area: title;
         @extend .laEmpresa__title;
         }
@@ -294,12 +294,11 @@
 // responsive for proyects section
 @media screen and (max-width:800px){
     .laEmpresa{
-        display: flex;
-        flex-direction: column;
+        @include f-center(column);
+
     }
     .proyectos{
-        display: flex;
-        flex-direction: column;
+        @include f-center(column);
         &__card-fst{
             max-width: none;
         }
@@ -316,6 +315,10 @@
                 flex-direction: row;
             }
         }
+    }
+
+    .servicios{
+        @include f-center(column)
     }
     .servicios__cards{
         grid-template-columns: 1fr 1fr;

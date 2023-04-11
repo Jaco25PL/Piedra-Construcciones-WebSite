@@ -43,19 +43,24 @@
   margin: 0;
   padding: 0;
   font-size: 1.2rem;
-}
-
-body {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 200;
-  font-size: 16px;
-  background-color: rgba(0, 0, 0, 0.0666666667);
-}
-
-a {
   text-decoration: none;
 }
 
+body {
+  background-color: rgba(0, 0, 0, 0.0666666667);
+}
+
+html {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 200;
+  font-size: 19px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  html {
+    font-size: 16px;
+  }
+}
 .header__link {
   display: flex;
   justify-content: space-between;
@@ -841,10 +846,14 @@ a {
 @media screen and (max-width: 800px) {
   .laEmpresa {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   .proyectos {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   .proyectos__card-fst {
@@ -862,6 +871,12 @@ a {
   }
   .proyectos__list-right {
     flex-direction: row;
+  }
+  .servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .servicios__cards {
     grid-template-columns: 1fr 1fr;
@@ -905,10 +920,6 @@ a {
 
 @media screen and (max-width: 800px) {
   .laEmpresa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     overflow: hidden;
   }
   .laEmpresa__img {
