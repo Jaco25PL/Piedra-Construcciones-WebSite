@@ -1,5 +1,5 @@
 
-// info cection
+// info section
 .info__letter{
     margin: $margin-section;
     padding: 1rem 8%;
@@ -34,13 +34,13 @@
     -ms-border-radius: $r3;
     -o-border-radius: $r3;
     &__title{
-        grid-area: title;
         font-size: $fs-3;
         font-weight: weight(bold);
         color: $light;
-        background-color: $dark-t;
+        // background-color: $dark-t;
+        background: linear-gradient(-40deg, $dark , $dark-t, $dark-soft);
         width: fit-content;
-        padding: $r3 $R1;   
+        padding: $r3 $R1;
         border-radius: $r3;
         transition: $soft;
         -webkit-border-radius: $r3;
@@ -51,12 +51,7 @@
         -moz-transition: $soft;
         -ms-transition: $soft;
         -o-transition: $soft;
-        &:hover{
-            background-color: $tomato;
-            cursor: default;
-        }
-
-        }
+}
         &__card{         
             background-color: $light-c;
             border-radius: $r3;
@@ -331,7 +326,6 @@
         margin: 1rem 0;
         &__title{
             font-size: $fs-2;
-            background-color: $tomato-t;
         }
         &__card{
             @include f-center(column);

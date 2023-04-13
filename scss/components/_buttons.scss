@@ -4,8 +4,9 @@
     margin: 1rem auto;
 
     &__link{
+        position: relative;
         color: $light;
-        background-color: $dark-t;
+        background: linear-gradient(-40deg, $dark , $dark-t, $dark-soft);
         border-radius: $R2;
         padding: $r5 $R13;
         transition: $soft;
@@ -27,8 +28,33 @@
         &:hover{
             color: $tomato;
             background-color: $light;
-            box-shadow: 0 0 $R1 $gray-t;
-     
+            box-shadow: .5rem 0 $R2 #fff;
+
+            &::before{
+                box-shadow: 0 0 $R1 $gray;
+                opacity: 1;
+            }
         }
+
+        &::before{
+            content: "Ver más";
+            @include f-center(row);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            opacity: 0;
+            border-radius: inherit;
+            background-color: $light;
+            -webkit-border-radius: inherit;
+            -moz-border-radius: inherit;
+            -ms-border-radius: inherit;
+            -o-border-radius: inherit;
+            transition: $soft;
+            -webkit-transition: $soft;
+            -moz-transition: $soft;
+            -ms-transition: $soft;
+            -o-transition: $soft;
+}
     }
 }

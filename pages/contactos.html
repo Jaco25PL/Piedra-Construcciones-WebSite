@@ -7,7 +7,12 @@
     <meta name="description" content="Comunicate con nosotros de manera fácil y rápida. ¡Contáctanos hoy y descubre cómo podemos ayudarte con tus proyectos de construcción!">
     <meta name="keywords" content="piedra construcciones, construcción, contactos, proyectos, obras, edificación">
     
-    <title>Contactos - Piedra Construcciones</title>
+    <title>Contactos | Piedra Construcciones</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Nunito+Sans:wght@200;400;700;900&display=swap" rel="stylesheet">   
 
     <!-- favicon -->
     <link rel="icon" href="../../img/favicon-2.webp" type="image/png" >
@@ -20,7 +25,6 @@
     
     <!-- bootstrap icnos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    
 
 </head>
 <body>
@@ -74,14 +78,14 @@
             <div class="carousel-inner"  >
             
                 <div class="carousel-item active" style="max-height: 25rem;">
-                    <img src="../img/c-i-1.jpg" class="d-block w-100" alt="wallpaper">
-                    <div class="carousel-caption top-0 my-auto mx-5   name__bg-text" style="height: fit-content; background-color: #0008;" >
+                    <img src="../img/c-i-2.jpg" class="d-block w-100" alt="wallpaper">
+                    <div class="carousel-caption top-0 my-auto mx-5 name__bg-text" style="height: fit-content; background-color: #0008;" >
                         <h1 class="px-5 px-sm-0">Contactos</h1>
                     </div>
                 </div>
     
                 <div class="carousel-item" style="max-height: 25rem;">
-                    <img src="../img/c-i-2.jpg" class="d-block w-100" alt="wallpaper">
+                    <img src="../img/c-i-1.jpg" class="d-block w-100" alt="wallpaper">
                 </div>
     
                 <div class="carousel-item" style="max-height: 25rem;">
@@ -100,59 +104,60 @@
 
 
 <!-- main section -->
-    <main class="container py-5">
-        <div class="row d-flex justify-content-between">
+        <main class="mx-3 mx-lg-5 py-5">
+            <div class="row">
 
     <!-- formulario -->
-            <div class="col-md-7">
+            <div class="col-md-7  d-flex flex-column align-items-center d-md-block">
                 <h2 class="mb-5 text-decoration-underline">Formulario de Contacto</h2>
                 <form>
-
+                
                     <div class="row mb-4">
                         <div class="col-sm-6">
-                            <input type="text" class="form-control py-3 mb-4 mb-sm-0" placeholder="Nombre" name="name" required>
+                            <input type="text" class="form-control py-2 mb-4 mb-sm-0" placeholder="Nombre" name="name" required>
                         </div>
                         <div class="col-sm-6">
-                            <input type="email" class="form-control py-3" placeholder="Email" name="email" required>
+                            <input type="email" class="form-control py-2" placeholder="Email" name="email" required>
                         </div>
                     </div>
-
+                
                     <div class="row mb-4">
                         <div class="col-sm-6">
-                            <input type="number" class="form-control py-3 mb-4 mb-sm-0" placeholder="Telefono" name="phone" required>
+                            <input type="number" class="form-control py-2 mb-4 mb-sm-0" placeholder="Telefono" name="phone" required>
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control py-3" placeholder="Asunto" name="subject" required>
+                            <input type="text" class="form-control py-2" placeholder="Asunto" name="subject" required>
                         </div>
                     </div>
-
+                
                     <div class="mb-4">
-                        <textarea class="form-control pt-3" placeholder="Mensaje" name="message" rows="5"></textarea>
+                        <textarea class="form-control" placeholder="Mensaje" name="message" rows="5"></textarea>
                     </div>
-
-                    <button type="submit" class="btn btn-success px-3 fs-5 mb-5 mb-md-0">Enviar</button>
+                    <div class="d-md-block d-flex flex-column align-items-center">
+                        <button type="submit" class="btn btn-success px-2 fs-5 mb-5 mb-md-0">Enviar</button>
+                    </div>
                 </form>
             </div>
-
-    <!-- redes -->
-            <div class="col-md-4 ps-5 me-5" style="border-left: 3px solid tomato;">
+                
+            <!-- redes -->
+            <div class="col-md-5 d-flex flex-column align-items-center d-md-block" >
                 <h2 class="mb-5 text-decoration-underline">Contactos</h2>
-                <div class="row mb-5">
-                    <div class="col">
-                        <h3 class="text-danger">Telefono</h3>
-                        <a class="fs-5 text-dark ms-4" href="https://www.whatsapp.com" target="_blank"><i class="bi bi-whatsapp pe-3 fs-3"></i>WhatsApp</a>
+
+                <div class="bg-primary-subtle rounded-3 py-2 px-3 d-flex flex-column">
+                    <div class="row mb-4 d-inline-block">
+                        <div class="col">
+                            <a class="fs-6 text-dark" href="https://www.whatsapp.com" target="_blank"><i class="bi bi-telephone pe-3 fs-4"></i>+598 123 456 789</a>
+                        </div>
                     </div>
-                </div>
-                <div class="row mb-5">
-                    <div class="col">
-                        <h3 class="text-danger">Correo</h3>
-                        <a class="fs-5 text-dark ms-4" href="https://www.gmail.com" target="_blank"><i class="bi bi-envelope pe-3 fs-3"></i>Correo@gmail.com</a>
+                    <div class="row mb-4 d-inline-block">
+                        <div class="col">
+                            <a class="fs-6 text-dark" href="https://www.gmail.com" target="_blank"><i class="bi bi-envelope pe-3 fs-4"></i>Correo@gmail.com</a>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <h3 class="text-danger">Instagram</h3>
-                        <a class="fs-5 text-dark ms-4" href="https://www.instagram.com/piedra.construcciones/" target="_blank"><i class="bi bi-instagram pe-3 fs-3"></i>Piedra Construcciones</a>
+                    <div class="row d-inline-block">
+                        <div class="col">
+                            <a class="fs-6 text-dark" href="https://www.instagram.com/piedra.construcciones/" target="_blank"><i class="bi bi-instagram pe-3 fs-4"></i>Piedra Construcciones</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -214,7 +219,7 @@
             </div>
         </div>
         <div class="footer__bottom">
-            <span class="footer__bottom-copyright">© Piedra construcciones Todos los derechos reservados.</span>
+            <span class="footer__bottom-copyright">© Piedra construcciones</span>
             <span><a href="#" class="footer__bottom-tyc">Terminos y Condiciones</a></span>
         </div>
     </footer>

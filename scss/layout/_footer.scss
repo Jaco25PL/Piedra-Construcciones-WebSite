@@ -7,7 +7,7 @@
 
 // footer top ----------------------------
     
-    .footer__top{
+    &__top{
         @include f-n-center(space-around);
         margin: $margin-section;
     }
@@ -72,34 +72,35 @@
     &__nav-link{    
         @extend .footer__contact-link;
     }
-}
-
-// footer bottom ----------------------------
-
-.footer__bottom{
-    border-top: 2px solid $gray-t;
-    height: fit-content;
-    @include f-center(row);
-    gap: $R2;
-    padding: $r5;
-    &-copyright{
-        color: $light-t;
-        font-size: $fs-1;
-        font-weight: weight(normal);
-
-    }
-    &-tyc{
-        @extend .footer__bottom-copyright;
-        transition: $soft;
-        -webkit-transition: $soft;
-        -moz-transition: $soft;
-        -ms-transition: $soft;
-        -o-transition: $soft;
-        &:hover{
-            color: $light;
+    
+    // footer bottom ----------------------------
+    
+    &__bottom{
+        border-top: 2px solid $gray-t;
+        height: fit-content;
+        @include f-center(row);
+        gap: $R2;
+        padding: $r5;
+        &-copyright{
+            color: $light-t;
+            font-size: $fs-1;
+            font-weight: weight(normal);
+    
         }
+        &-tyc{
+            @extend .footer__bottom-copyright;
+            transition: $soft;
+            -webkit-transition: $soft;
+            -moz-transition: $soft;
+            -ms-transition: $soft;
+            -o-transition: $soft;
+            &:hover{
+                color: $light;
+            }
+        }
+    }
 }
-}
+
 
 // responsive ----------------
 @media screen and (max-width:1080px){
@@ -118,7 +119,8 @@
             display: none !important;
         }
         padding: $r5;
-        .footer__top{
+
+        &__top{
             @include f-center(column-reverse);
             gap: $R1;
             margin: $r5 ;
@@ -149,15 +151,14 @@
                     -moz-transform: scale(1.08);
                     -ms-transform: scale(1.08);
                     -o-transform: scale(1.08);
-}
+                }
             }
         }
-        // &__icons{
-        //     display: none;
-        // }
-
+        &__bottom{
+            @include f-center(column);
+            padding-top: $R1;
+            gap: 0;
+        }
     }
-
-
 }
 

@@ -27,7 +27,7 @@
         padding: .5rem .8rem;
         border-radius: $r5;
         color: $light;
-        background-color: $dark;
+        background: linear-gradient(-40deg, $dark , $dark-t, $dark-soft);
         font-weight: weight(bold);
         transition: all ease-out .3s;
         -webkit-transition: all ease-out .3s;
@@ -168,7 +168,7 @@
             height: fit-content;
             top: 4rem;
             padding: $R2;
-            min-width: 17rem;
+            min-width: 13rem;
             display: none;
             border-radius: 0 0 $r3 $r3;
             -webkit-border-radius: 0 0 $r3 $r3;
@@ -180,6 +180,7 @@
                 top: $R1;
                 background-color: $gray-t;
                 border-radius: $r3;
+                max-width: 9.4rem;
                 -webkit-border-radius: $r3 $r3;
                 -moz-border-radius: $r3 $r3;
                 -ms-border-radius: $r3 $r3;
@@ -198,12 +199,14 @@
         }
         &:hover .nav__menu{
             @include f-center(column);
+            align-items: start;
         }
 
     // sub-menu
         &__item-down{
             flex-direction: column;
             order: 2;
+            align-items: start
         }
         &__item-mobile-down{
             @include f-center(row);
