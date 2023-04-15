@@ -23,7 +23,6 @@
     
     &-cont{
         font-size: $fs-1;
-        background-color: $light;
         padding: .5rem .8rem;
         border-radius: $r5;
         color: $light;
@@ -185,6 +184,7 @@
                 -moz-border-radius: $r3 $r3;
                 -ms-border-radius: $r3 $r3;
                 -o-border-radius: $r3 $r3;
+                padding-left: 0; 
             }
         }      
         &__icon{
